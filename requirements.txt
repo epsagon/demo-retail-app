@@ -1,5 +1,0 @@
-Flask==1.1.1
-gunicorn==19.9.0
-boto3==1.9.243
-watchtower==0.7.3  # Easy logging to AWS CloudWatch
-epsagon==1.25.0
