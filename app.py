@@ -18,13 +18,13 @@ epsagon.flask_wrapper(app)
 
 sns = boto3.client(
     'sns',
-    region_name='us-east-2',
+    region_name=os.environ.get('AWS_REGION'),
     aws_access_key_id=os.environ.get('AWS_ACCESS_KEY'),
     aws_secret_access_key=os.environ.get('AWS_SECRET_ACCESS_KEY')  
 )
 
 logs_session = boto3.Session(
-    region_name='us-east-2',
+    region_name=os.environ.get('AWS_REGION'),
     aws_access_key_id=os.environ.get('AWS_ACCESS_KEY'),
     aws_secret_access_key=os.environ.get('AWS_SECRET_ACCESS_KEY')  
 )
