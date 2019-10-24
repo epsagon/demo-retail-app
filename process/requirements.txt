@@ -1,0 +1,7 @@
+Flask==1.1.1
+gunicorn==19.9.0
+requests==2.22.0
+stripe==2.37.2
+boto3==1.9.243
+watchtower==0.7.3
+epsagon==1.25.0
